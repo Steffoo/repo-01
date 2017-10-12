@@ -389,7 +389,7 @@ public final class Bootstrap {
             daemon = new Bootstrap();
             try {
                 daemon.init();
-            } catch (Throwable t) {
+            }catch (Throwable t) {
                 t.printStackTrace();
                 return;
             }

@@ -83,6 +83,11 @@ public class Connector
         try {
             Class clazz = Class.forName(protocolHandlerClassName);
             this.protocolHandler = (ProtocolHandler) clazz.newInstance();
+            String[] beans = Registry.getRegistry().findManagedBeans();
+            Arrays.sort(beans);
+            for(String s : beans)
+                System.out.println(s);
+//            System.out.println(Arrays.toString(beans));
         } catch (Exception e) {
             log.error
                 (sm.getString
