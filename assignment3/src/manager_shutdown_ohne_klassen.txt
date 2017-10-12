@@ -1,0 +1,42 @@
+digraph {
+org_apache_catalina_manager_HTMLManagerServlet_stop  -> org_apache_catalina_manager_HTMLManagerServlet_doGet 
+
+org_apache_catalina_manager_HTMLManagerServlet_doGet  -> javax_servlet_http_HttpServlet_service 
+
+javax_servlet_http_HttpServlet_service  -> javax_servlet_http_HttpServlet_service 
+
+javax_servlet_http_HttpServlet_service  -> org_apache_catalina_core_ApplicationFilterChain_internalDoFilter 
+
+org_apache_catalina_core_ApplicationFilterChain_internalDoFilter  -> org_apache_catalina_core_ApplicationFilterChain_doFilter 
+
+org_apache_catalina_core_ApplicationFilterChain_doFilter  ->  org_apache_catalina_filters_CsrfPreventionFilter_doFilter 
+
+org_apache_catalina_filters_CsrfPreventionFilter_doFilter  -> org_apache_catalina_core_ApplicationFilterChain_internalDoFilter 
+
+org_apache_catalina_core_ApplicationFilterChain_internalDoFilter  -> org_apache_catalina_core_ApplicationFilterChain_doFilter 
+	
+org_apache_catalina_core_ApplicationFilterChain_doFilter  -> org_apache_catalina_core_StandardWrapperValve_invoke 
+
+org_apache_catalina_core_StandardWrapperValve_invoke  -> org_apache_catalina_core_StandardContextValve_invoke 
+	
+org_apache_catalina_core_StandardContextValve_invoke  -> org_apache_catalina_authenticator_AuthenticatorBase_invoke 
+
+org_apache_catalina_authenticator_AuthenticatorBase_invoke  -> org_apache_catalina_core_StandardHostValve_invoke 
+	
+org_apache_catalina_core_StandardHostValve_invoke  -> org_apache_catalina_valves_ErrorReportValve_invoke 
+
+org_apache_catalina_valves_ErrorReportValve_invoke  -> org_apache_catalina_core_StandardEngineValve_invoke 
+	
+org_apache_catalina_core_StandardEngineValve_invoke  ->  org_apache_catalina_connector_CoyoteAdapter_service 
+
+org_apache_catalina_connector_CoyoteAdapter_service  -> org_apache_coyote_http11_Http11Processor_process 
+
+org_apache_coyote_http11_Http11Processor_process  -> org_apache_coyote_http11_Http11Protocol
+	
+org_apache_coyote_http11_Http11Protocol  -> org_apache_tomcat_util_net_JIoEndpoint
+	
+org_apache_tomcat_util_net_JIoEndpoint  -> java_lang_Thread_run 
+}
+	
+	
+	
