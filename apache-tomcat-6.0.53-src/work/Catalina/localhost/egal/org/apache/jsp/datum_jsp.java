@@ -52,7 +52,16 @@ public final class datum_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("<html><body>\r\n");
       out.write("Es ist:\r\n");
- out.println((new java.util.Date()).toString()); 
+ out.println((new java.util.Date()).toString());
+
+    try {
+        throw new Exception();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+};
+
+      out.write("\r\n");
       out.write("\r\n");
       out.write("</body></html>");
     } catch (Throwable t) {
