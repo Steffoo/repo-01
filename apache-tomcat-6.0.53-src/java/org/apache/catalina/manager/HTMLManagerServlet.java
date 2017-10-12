@@ -641,6 +641,11 @@ public final class HTMLManagerServlet extends ManagerServlet {
 
         super.stop(printWriter, path);
 
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return stringWriter.toString();
     }
     
