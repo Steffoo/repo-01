@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="annotations-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/output/build/lib/annotations-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/catalina-ant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/catalina-ha.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/catalina-tribes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/catalina.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/ecj-4.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/el-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/jasper-el.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/jasper.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/output/build/lib/tomcat-coyote.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
