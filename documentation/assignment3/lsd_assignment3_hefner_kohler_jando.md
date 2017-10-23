@@ -33,18 +33,14 @@ Deswegen hatten wir uns dazu entschlossen, dieses Paket als erstes zu untersuche
 Innerhalb des Paketes in der Klasse *Connector* haben wir uns mit einem Iterator sämtliche Bohnen (engl. Beans), die beim Starten angelegt werden, ausgegeben. 
 Die auffälligste Bohne *RequestDumperValve*, aufgrund des im Namen enthaltenen Wortes *Request*[^2], haben wir uns diese Klasse genauer angeschaut. 
 Da die *RequestDumperValve* bei der Funktion *invoke()* mit Hilfe einer *ServletException* einen Fehler im Programmablauf aufzeigen kann, haben wir uns ein spezielles *Servlet*[^3] rausgesucht und näher betrachtet. 
-Hierfür haben wir auf dem Web-Interface von Tomcat unter [localhost:8080/](http://localhost:8080/) den Servlet-Manager aufgerufen und bei einem Servlet auf den Stop-Link geklickt, 
-wodurch die Stop-Funktion des *HTTPManagerServlet* aufgerufen wurde (siehe Abbildung \ref{servlet_manager}). 
+Hierfür haben wir auf der Weboberfläche von Tomcat unter [localhost:8080/](http://localhost:8080/) den Servlet-Manager aufgerufen und bei unserem Test-Servlet *egal* auf den Stop-Link geklickt, 
+wodurch die Stop-Funktion des *HTTPManagerServlet* aufgerufen wurde (siehe Abb. \ref{tomcat_manager}).
+
+![Web-Oberflaeche des Tomcat-Servlets-Manager\label{tomcat_manager}](pictures/tomcatManager.png)
+
 Da wir außerdem die Aufrufhierarchie bei einer Anfrage von eigenen *Java Server Pages*(JSP)-Files untersuchen wollten, 
 haben wir ein kleines JSP erstellt und in den Java-Abschnitt das Auftreten einer absiichtlichen Fehlermeldung[^4] eingebaut, welches die Aufrufhierachie aller Klassen bis zur Stelle der Fehlermeldung ausgibt.
-Das nachfolgende Listing verdeutlich die Aufrufhierachie. 
-
-\newpage
-
-[^1]: [www.graphviz.org](http://www.graphviz.org/)
-[^2]: deutsch: Anfrage
-[^3]: Tomcat Manager (stop-Funktion für Servlets)
-[^4]: engl: exception
+Das nachfolgende Listing verdeutlich die Aufrufhierachie.
 
 ```html
 <html><body>
@@ -61,10 +57,14 @@ Es ist:
 
 </body></html>
 ```
-
 Listing 1: Einfaches Servlet, in das eine Fehlermeldung eingebaut wurde.
+
+[^1]: [www.graphviz.org](http://www.graphviz.org/)
+[^2]: deutsch: Anfrage
+[^3]: Tomcat Manager (stop-Funktion für Servlets)
+[^4]: engl: exception
  
-# Architektur von Tomcat
+# Ergebnisse der Architekturanalyse
 
 Die folgenden Abhängigkeitsgraphen zeigen die Ergebnisse unserer dynamischen Architektur-Untersuchungen. 
 Diese wurden mit dem Tool *dot* aus *Graphviz* gezeichnet.
