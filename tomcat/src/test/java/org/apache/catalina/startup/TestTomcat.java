@@ -257,38 +257,6 @@ public class TestTomcat extends TomcatBaseTest {
     }
 
     @Test
-    public void testSingleWebapp() throws Exception {
-        Tomcat tomcat = getTomcatInstance();
-
-        File appDir = new File(getBuildDirectory(), "webapps/examples");
-
-        tomcat.addWebapp(null, "/examples", appDir.getAbsolutePath());
-
-        tomcat.start();
-
-        ByteChunk res = getUrl("http://localhost:" + getPort() +
-                "/examples/servlets/servlet/HelloWorldExample");
-        String text = res.toString();
-        assertTrue(text, text.indexOf("<a href=\"../helloworld.html\">") > 0);
-    }
-
-    @Test
-    public void testJsps() throws Exception {
-        Tomcat tomcat = getTomcatInstance();
-
-        File appDir = new File(getBuildDirectory(), "webapps/examples");
-        // app dir is relative to server home
-        tomcat.addWebapp(null, "/examples", appDir.getAbsolutePath());
-
-        tomcat.start();
-
-        ByteChunk res = getUrl("http://localhost:" + getPort() +
-                "/examples/jsp/jsp2/el/basic-arithmetic.jsp");
-        String text = res.toString();
-        assertTrue(text, text.indexOf("<td>${(1==2) ? 3 : 4}</td>") > 0);
-    }
-
-    @Test
     public void testSession() throws Exception {
         Tomcat tomcat = getTomcatInstance();
 
@@ -383,34 +351,6 @@ public class TestTomcat extends TomcatBaseTest {
         assertEquals("Hello, Tomcat User", res.toString());
     }
 
-
-    /**
-     * Test for https://bz.apache.org/bugzilla/show_bug.cgi?id=47866
-     */
-    @Test
-    public void testGetResource() throws Exception {
-        Tomcat tomcat = getTomcatInstance();
-
-        String contextPath = "/examples";
-
-        File appDir = new File(getBuildDirectory(), "webapps" + contextPath);
-        // app dir is relative to server home
-        Context ctx =
-            tomcat.addWebapp(null, "/examples", appDir.getAbsolutePath());
-
-        Tomcat.addServlet(ctx, "testGetResource", new GetResource());
-        ctx.addServletMapping("/testGetResource", "testGetResource");
-
-        tomcat.start();
-
-        ByteChunk res = new ByteChunk();
-
-        int rc =getUrl("http://localhost:" + getPort() + contextPath +
-                "/testGetResource", res, null);
-        assertEquals(HttpServletResponse.SC_OK, rc);
-        assertTrue(res.toString().contains("<?xml version=\"1.0\" "));
-    }
-
     @Test
     public void testBug50826() throws Exception {
         Tomcat tomcat = getTomcatInstance();
@@ -447,12 +387,6 @@ public class TestTomcat extends TomcatBaseTest {
         assertEquals("OK", res.toString());
 
         assertEquals(1, initCount.getCallCount());
-    }
-
-    @Test
-    public void testGetWebappConfigFileFromDirectory() {
-        Tomcat tomcat = new Tomcat();
-        assertNotNull(tomcat.getWebappConfigFile("test/deployment/dirContext", ""));
     }
 
     @Test
