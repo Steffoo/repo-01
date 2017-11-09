@@ -5,11 +5,6 @@ node {
 	
 	checkout scm
 	
-	sh "cd 'tomcat'"
-	
-	sh "pwd"
-	sh "ll"
-	
 	// String gitCommit = sh (returnStdout: true, script: 'git rev-parse HEAD').trim()
     // gradle "clean build publish -Prevision=${buildNr}--${gitCommit}"
 	
@@ -19,20 +14,20 @@ node {
     env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
     sh 'java -version'
     
-	sh "mvn 'clean'"
+	sh "cd 'tomcat' ; mvn 'clean'"
 	
 	//------------------------------------------------------------------------
     stage name: 'compile'
 	//------------------------------------------------------------------------
 
     
-    sh "mvn 'compile'"
+    sh "cd 'tomcat' ; mvn 'compile'"
     
     //------------------------------------------------------------------------
     stage name: 'assembly'
 	//------------------------------------------------------------------------
 	
-	sh "mvn 'assembly:single'"
+	sh "cd 'tomcat' ; mvn 'assembly:single'"
     
 
 } 
