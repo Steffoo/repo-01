@@ -5,7 +5,7 @@ node {
 	
 	checkout scm
 	
-	cd 'tomcat'
+	sh "cd 'tomcat'"
 	
 	// String gitCommit = sh (returnStdout: true, script: 'git rev-parse HEAD').trim()
     // gradle "clean build publish -Prevision=${buildNr}--${gitCommit}"
