@@ -1,0 +1,2659 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building tomcat 6.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tomcat ---
+[INFO] Deleting /Users/mjando/repo-01/tomcat/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tomcat ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 142 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tomcat ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1106 source files to /Users/mjando/repo-01/tomcat/target/classes
+[WARNING] /Users/mjando/repo-01/tomcat/src/main/java/javax/servlet/jsp/JspContext.java: Some input files use or override a deprecated API.
+[WARNING] /Users/mjando/repo-01/tomcat/src/main/java/javax/servlet/jsp/JspContext.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /Users/mjando/repo-01/tomcat/src/main/java/org/apache/catalina/util/StringManager.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/mjando/repo-01/tomcat/src/main/java/org/apache/catalina/util/StringManager.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tomcat ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/mjando/repo-01/tomcat/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tomcat ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 56 source files to /Users/mjando/repo-01/tomcat/target/test-classes
+[WARNING] /Users/mjando/repo-01/tomcat/src/test/java/org/apache/catalina/tribes/demos/ChannelCreator.java: /Users/mjando/repo-01/tomcat/src/test/java/org/apache/catalina/tribes/demos/ChannelCreator.java uses or overrides a deprecated API.
+[WARNING] /Users/mjando/repo-01/tomcat/src/test/java/org/apache/catalina/tribes/demos/ChannelCreator.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /Users/mjando/repo-01/tomcat/src/test/java/org/apache/catalina/tribes/demos/IntrospectionUtils.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/mjando/repo-01/tomcat/src/test/java/org/apache/catalina/tribes/demos/IntrospectionUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tomcat ---
+[INFO] Surefire report directory: /Users/mjando/repo-01/tomcat/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running javax.el.TestArrayELResolver
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+Running org.apache.catalina.connector.TestConnector
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.267 sec
+Running org.apache.catalina.connector.TestSendFile
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922656-0.txt with 100000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922657-1.txt with 200000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922659-2.txt with 300000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922662-3.txt with 400000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922665-4.txt with 500000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922669-5.txt with 600000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922675-6.txt with 700000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922678-7.txt with 800000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922680-8.txt with 900000 bytes.
+Created file:/var/folders/7z/tsq5w41952ndkh4pk8xg_3y4zzb6wq/T/testSendFile-1509635922683-9.txt with 1000000 bytes.
+Server Wrote 100000 bytes in 3 ms.
+Client received 100000 bytes in 30 ms.
+Server Wrote 200000 bytes in 1 ms.
+Client received 200000 bytes in 1 ms.
+Server Wrote 300000 bytes in 3 ms.
+Client received 300000 bytes in 5 ms.
+Server Wrote 400000 bytes in 1 ms.
+Client received 400000 bytes in 3 ms.
+Server Wrote 500000 bytes in 3 ms.
+Client received 500000 bytes in 5 ms.
+Server Wrote 600000 bytes in 1 ms.
+Client received 600000 bytes in 4 ms.
+Server Wrote 700000 bytes in 3 ms.
+Client received 700000 bytes in 5 ms.
+Server Wrote 800000 bytes in 3 ms.
+Client received 800000 bytes in 6 ms.
+Server Wrote 900000 bytes in 3 ms.
+Client received 900000 bytes in 4 ms.
+Server Wrote 1000000 bytes in 2 ms.
+Client received 1000000 bytes in 3 ms.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.298 sec
+Running org.apache.catalina.core.TestApplicationContext
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.147 sec
+Running org.apache.catalina.core.TestApplicationHttpRequest
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.384 sec
+Running org.apache.catalina.ha.session.TestSerializablePrincipal
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.catalina.startup.TestTomcat
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Mapper
+org.apache.catalina.authenticator.FormAuthenticator
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.loader.WebappClassLoader
+org.apache.catalina.loader.WebappLoader
+org.apache.catalina.realm.JAASRealm
+org.apache.catalina.session.StandardManager
+org.apache.catalina.startup.Tomcat$ExistingStandardWrapper
+org.apache.catalina.valves.ErrorReportValve
+org.apache.coyote.RequestGroupInfo
+org.apache.coyote.RequestInfo
+org.apache.coyote.http11.Http11Protocol
+org.apache.naming.resources.ResourceCache
+org.apache.tomcat.util.buf.StringCache
+org.apache.tomcat.util.net.JIoEndpoint
+Tests run: 15, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 9.415 sec <<< FAILURE!
+testSingleWebapp(org.apache.catalina.startup.TestTomcat)  Time elapsed: 1.136 sec  <<< FAILURE!
+java.lang.AssertionError: <html><head><title>Apache Tomcat/@VERSION@ - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/@VERSION@</h3></body></html>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.apache.catalina.startup.TestTomcat.testSingleWebapp(TestTomcat.java:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testJsps(org.apache.catalina.startup.TestTomcat)  Time elapsed: 1.061 sec  <<< FAILURE!
+java.lang.AssertionError: <html><head><title>Apache Tomcat/@VERSION@ - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/@VERSION@</h3></body></html>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.apache.catalina.startup.TestTomcat.testJsps(TestTomcat.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testGetWebappConfigFileFromDirectory(org.apache.catalina.startup.TestTomcat)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at org.junit.Assert.assertNotNull(Assert.java:722)
+	at org.apache.catalina.startup.TestTomcat.testGetWebappConfigFileFromDirectory(TestTomcat.java:455)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testGetResource(org.apache.catalina.startup.TestTomcat)  Time elapsed: 1.054 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at org.apache.catalina.startup.TestTomcat.testGetResource(TestTomcat.java:410)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.catalina.TestServerFactory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.catalina.tribes.group.interceptors.TestDomainFilterInterceptor
+All channels started.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 sec
+Running org.apache.catalina.tribes.group.interceptors.TestNonBlockingCoordinator
+Setup
+Coordinator[1] is:null
+tearDown
+Setup
+Coordinator[2a] is:null
+Member count:0
+Coordinator[2b] is:null
+tearDown
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.674 sec
+Running org.apache.catalina.tribes.group.interceptors.TestOrderInterceptor
+Setup
+tearDown
+Setup
+tearDown
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 3.794 sec <<< FAILURE!
+testOrder1(org.apache.catalina.tribes.group.interceptors.TestOrderInterceptor)  Time elapsed: 1.821 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: No destination given; No faulty members identified.
+	at org.apache.catalina.tribes.group.GroupChannel.send(GroupChannel.java:194)
+	at org.apache.catalina.tribes.group.GroupChannel.send(GroupChannel.java:175)
+	at org.apache.catalina.tribes.group.interceptors.TestOrderInterceptor.testOrder1(TestOrderInterceptor.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testOrder2(org.apache.catalina.tribes.group.interceptors.TestOrderInterceptor)  Time elapsed: 1.972 sec  <<< FAILURE!
+java.lang.AssertionError: Exception while sending in threads: org.apache.catalina.tribes.ChannelException: No destination given; No faulty members identified.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.apache.catalina.tribes.group.interceptors.TestOrderInterceptor.testOrder2(TestOrderInterceptor.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector
+testTcpMcastFail()
+testTcpFailureMemberAdd()
+testTcpSendFailureMemberDrop()
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 3.019 sec <<< FAILURE!
+testTcpMcastFail(org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector)  Time elapsed: 0.985 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector.testTcpMcastFail(TestTcpFailureDetector.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 37 more
+
+testTcpFailureMemberAdd(org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector)  Time elapsed: 1.007 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector.testTcpFailureMemberAdd(TestTcpFailureDetector.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 37 more
+
+testTcpSendFailureMemberDrop(org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector)  Time elapsed: 1.026 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector.testTcpSendFailureMemberDrop(TestTcpFailureDetector.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 37 more
+
+Running org.apache.catalina.tribes.group.TestGroupChannelMemberArrival
+1509636020353 All channels started.
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.35 sec <<< FAILURE!
+testMemberArrival(org.apache.catalina.tribes.group.TestGroupChannelMemberArrival)  Time elapsed: 6.35 sec  <<< FAILURE!
+java.lang.AssertionError: Checking member arrival length (Listener-10) expected:<9> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.apache.catalina.tribes.group.TestGroupChannelMemberArrival.testMemberArrival(TestGroupChannelMemberArrival.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.catalina.tribes.group.TestGroupChannelOptionFlag
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.36 sec
+Running org.apache.catalina.tribes.group.TestGroupChannelSenderConnections
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.872 sec
+Running org.apache.catalina.tribes.group.TestGroupChannelStartStop
+class org.apache.catalina.tribes.transport.nio.NioReceiver
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.893 sec <<< FAILURE!
+testDoubleFullStart(org.apache.catalina.tribes.group.TestGroupChannelStartStop)  Time elapsed: 1.423 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at org.apache.catalina.tribes.group.TestGroupChannelStartStop.testDoubleFullStart(TestGroupChannelStartStop.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testDoublePartialStart(org.apache.catalina.tribes.group.TestGroupChannelStartStop)  Time elapsed: 1.468 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at org.apache.catalina.tribes.group.TestGroupChannelStartStop.testDoublePartialStart(TestGroupChannelStartStop.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.catalina.tribes.io.TestXByteBuffer
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.catalina.tribes.membership.TestMemberImplSerialization
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+Running org.apache.catalina.tribes.test.channel.TestDataIntegrity
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 7.622 sec <<< FAILURE!
+testDataSendASYNCM(org.apache.catalina.tribes.test.channel.TestDataIntegrity)  Time elapsed: 1.481 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor.start(MessageDispatchInterceptor.java:147)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.test.channel.TestDataIntegrity.setUp(TestDataIntegrity.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+testDataSendNO_ACK(org.apache.catalina.tribes.test.channel.TestDataIntegrity)  Time elapsed: 1.478 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor.start(MessageDispatchInterceptor.java:147)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.test.channel.TestDataIntegrity.setUp(TestDataIntegrity.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+testDataSendACK(org.apache.catalina.tribes.test.channel.TestDataIntegrity)  Time elapsed: 1.511 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor.start(MessageDispatchInterceptor.java:147)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.test.channel.TestDataIntegrity.setUp(TestDataIntegrity.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+testDataSendASYNC(org.apache.catalina.tribes.test.channel.TestDataIntegrity)  Time elapsed: 1.559 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor.start(MessageDispatchInterceptor.java:147)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.test.channel.TestDataIntegrity.setUp(TestDataIntegrity.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+testDataSendSYNCACK(org.apache.catalina.tribes.test.channel.TestDataIntegrity)  Time elapsed: 1.591 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor.start(MessageDispatchInterceptor.java:147)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.test.channel.TestDataIntegrity.setUp(TestDataIntegrity.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+Running org.apache.catalina.tribes.test.channel.TestRemoteProcessException
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.568 sec <<< FAILURE!
+testDataSendSYNCACK(org.apache.catalina.tribes.test.channel.TestRemoteProcessException)  Time elapsed: 1.568 sec  <<< ERROR!
+org.apache.catalina.tribes.ChannelException: java.net.SocketException: Can't assign requested address; No faulty members identified.
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.start(ChannelInterceptorBase.java:149)
+	at org.apache.catalina.tribes.group.GroupChannel.start(GroupChannel.java:407)
+	at org.apache.catalina.tribes.test.channel.TestRemoteProcessException.setUp(TestRemoteProcessException.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:233)
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 35 more
+
+Running org.apache.catalina.valves.TestExtendedAccessLogValve
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.catalina.valves.TestRemoteIpValve
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.el.lang.TestELArithmetic
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.el.lang.TestELSupport
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.el.TestELEvaluation
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running org.apache.jasper.compiler.TestAttributeParser
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.jasper.compiler.TestELParser
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.juli.TestClassLoaderLogManager
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.005 sec
+Running org.apache.juli.TestDateFormatCache
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.tomcat.util.buf.TestB2CConverter
+
+
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.tomcat.util.http.parser.TestHttpParser
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.tomcat.util.http.TestCookies
+Processing [foo=bar; a=b]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b;]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b; ]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b; ;]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=;a=b; ;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo;a=b; ;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [$Version=1; foo=bar;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo=bar;a=b; ; ]
+1 - Cookie: Cookie foo=bar ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo=;a=b; ; ]
+1 - Cookie: Cookie foo= ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo= ;a=b; ; ]
+1 - Cookie: Cookie foo= ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo;a=b; ; ]
+1 - Cookie: Cookie foo= ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";a=b; ; ]
+1 - Cookie: Cookie foo=bar ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";$Domain=apache.org;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";$Domain=apache.org;a=b;$Domain=yahoo.com]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null yahoo.com
+Processing [$Version=1;foo="bar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="b"ar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="b\"ar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b"ar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="b'ar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b'ar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo=b'ar;$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b'ar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [foo=bar;a="b"]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a="b";]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [$Version=1;foo=b'ar;$Domain="apache.org";$Port=8080;a="b\"]
+One Cookie: Cookie foo=b'ar ; 1 null apache.org
+Processing [$Version=1;foo=b'ar;$Domain="apache.org";$Port=8080;a="b\]
+One Cookie: Cookie foo=b'ar ; 1 null apache.org
+Processing [$Version="1"; foo='bar'; $Path=/path; $Domain="localhost"]
+One Cookie: Cookie foo='bar' ; 1 /path localhost
+Processing [$Version=1;foo="bar";$Path=/examples;a=b; ; ]
+1 - Cookie: Cookie foo=bar ; 1 /examples null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [foo;a=b;bar]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;bar;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;bar ]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;bar ;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b; ;bar]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;;bar]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b; ;;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar=rab ; 0 null null
+Processing [foo;a=b;; ;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar=rab ; 0 null null
+Processing [foo;a=b;;#;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie #= ; 0 null null
+4 - Cookie: Cookie bar=rab ; 0 null null
+Processing [foo;a=b;;\;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar=rab ; 0 null null
+Processing [a=()<>@:\"/[]?={}	; foo=bar]
+One Cookie: Cookie foo=bar ; 0 null null
+Processing [$Version=1;foo=bar]
+One Cookie: Cookie foo=bar ; 1 null null
+Processing [$Version=0;foo=bar]
+One Cookie: Cookie foo=bar ; 0 null null
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.tomcat.util.res.TestStringManager
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Failed tests:   testSingleWebapp(org.apache.catalina.startup.TestTomcat): <html><head><title>Apache Tomcat/@VERSION@ - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/@VERSION@</h3></body></html>
+  testJsps(org.apache.catalina.startup.TestTomcat): <html><head><title>Apache Tomcat/@VERSION@ - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/@VERSION@</h3></body></html>
+  testGetWebappConfigFileFromDirectory(org.apache.catalina.startup.TestTomcat)
+  testGetResource(org.apache.catalina.startup.TestTomcat): expected:<200> but was:<404>
+  testOrder2(org.apache.catalina.tribes.group.interceptors.TestOrderInterceptor): Exception while sending in threads: org.apache.catalina.tribes.ChannelException: No destination given; No faulty members identified.
+  testMemberArrival(org.apache.catalina.tribes.group.TestGroupChannelMemberArrival): Checking member arrival length (Listener-10) expected:<9> but was:<0>
+  testDoubleFullStart(org.apache.catalina.tribes.group.TestGroupChannelStartStop): expected:<0> but was:<2>
+  testDoublePartialStart(org.apache.catalina.tribes.group.TestGroupChannelStartStop): expected:<0> but was:<1>
+
+Tests in error: 
+  testOrder1(org.apache.catalina.tribes.group.interceptors.TestOrderInterceptor): No destination given; No faulty members identified.
+  testTcpMcastFail(org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testTcpFailureMemberAdd(org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testTcpSendFailureMemberDrop(org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testDataSendASYNCM(org.apache.catalina.tribes.test.channel.TestDataIntegrity): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testDataSendNO_ACK(org.apache.catalina.tribes.test.channel.TestDataIntegrity): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testDataSendACK(org.apache.catalina.tribes.test.channel.TestDataIntegrity): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testDataSendASYNC(org.apache.catalina.tribes.test.channel.TestDataIntegrity): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testDataSendSYNCACK(org.apache.catalina.tribes.test.channel.TestDataIntegrity): java.net.SocketException: Can't assign requested address; No faulty members identified.
+  testDataSendSYNCACK(org.apache.catalina.tribes.test.channel.TestRemoteProcessException): java.net.SocketException: Can't assign requested address; No faulty members identified.
+
+Tests run: 245, Failures: 8, Errors: 10, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:23 min
+[INFO] Finished at: 2017-11-02T16:20:51+01:00
+[INFO] Final Memory: 31M/835M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project tomcat: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/mjando/repo-01/tomcat/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

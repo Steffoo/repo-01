@@ -1,0 +1,1263 @@
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Client received 100000 bytes in 30 ms.
+Client received 200000 bytes in 1 ms.
+Client received 300000 bytes in 5 ms.
+Client received 400000 bytes in 3 ms.
+Client received 500000 bytes in 5 ms.
+Client received 600000 bytes in 4 ms.
+Client received 700000 bytes in 5 ms.
+Client received 800000 bytes in 6 ms.
+Client received 900000 bytes in 4 ms.
+Client received 1000000 bytes in 3 ms.
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+Mapper
+org.apache.catalina.connector.Connector
+org.apache.catalina.core.StandardContext
+org.apache.catalina.core.StandardContextValve
+org.apache.catalina.core.StandardEngine
+org.apache.catalina.core.StandardEngineValve
+org.apache.catalina.core.StandardHost
+org.apache.catalina.core.StandardHostValve
+org.apache.catalina.core.StandardServer
+org.apache.catalina.core.StandardService
+org.apache.catalina.session.StandardManager
+org.apache.coyote.http11.Http11Protocol
+org.apache.tomcat.util.buf.StringCache
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at org.apache.catalina.startup.TestTomcat.testJsps(TestTomcat.java:288)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+Setup
+Coordinator[1] is:null
+tearDown
+Setup
+Coordinator[2a] is:null
+Member count:0
+Coordinator[2b] is:null
+tearDown
+Setup
+tearDown
+Setup
+tearDown
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 37 more
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 37 more
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 37 more
+
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 36 more
+
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:167)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.start(ChannelCoordinator.java:95)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+Caused by: java.net.SocketException: Can't assign requested address
+	at org.apache.catalina.tribes.membership.McastService.start(McastService.java:374)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.internalStart(ChannelCoordinator.java:152)
+	... 35 more
+
+
+
+
+Processing [foo=bar; a=b]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b;]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b; ]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a=b; ;]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=;a=b; ;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo;a=b; ;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [$Version=1; foo=bar;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo=bar;a=b; ; ]
+1 - Cookie: Cookie foo=bar ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo=;a=b; ; ]
+1 - Cookie: Cookie foo= ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo= ;a=b; ; ]
+1 - Cookie: Cookie foo= ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo;a=b; ; ]
+1 - Cookie: Cookie foo= ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";a=b; ; ]
+1 - Cookie: Cookie foo=bar ; 1 null null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";$Domain=apache.org;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";$Domain=apache.org;a=b;$Domain=yahoo.com]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null yahoo.com
+Processing [$Version=1;foo="bar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="b"ar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="b\"ar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b"ar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="b'ar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b'ar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo=b'ar;$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=b'ar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [foo=bar;a="b"]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [foo=bar;a="b";]
+1 - Cookie: Cookie foo=bar ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+Processing [$Version=1;foo=b'ar;$Domain="apache.org";$Port=8080;a="b\"]
+Processing [$Version=1;foo=b'ar;$Domain="apache.org";$Port=8080;a="b\]
+Processing [$Version="1"; foo='bar'; $Path=/path; $Domain="localhost"]
+Processing [$Version=1;foo="bar";$Path=/examples;a=b; ; ]
+1 - Cookie: Cookie foo=bar ; 1 /examples null
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [$Version=1;foo="bar";$Domain=apache.org;$Port=8080;a=b]
+1 - Cookie: Cookie foo=bar ; 1 null apache.org
+2 - Cookie: Cookie a=b ; 1 null null
+Processing [foo;a=b;bar]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;bar;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;bar ]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;bar ;]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b; ;bar]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b;;bar]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar= ; 0 null null
+Processing [foo;a=b; ;;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar=rab ; 0 null null
+Processing [foo;a=b;; ;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar=rab ; 0 null null
+Processing [foo;a=b;;#;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie #= ; 0 null null
+4 - Cookie: Cookie bar=rab ; 0 null null
+Processing [foo;a=b;;\;bar=rab]
+1 - Cookie: Cookie foo= ; 0 null null
+2 - Cookie: Cookie a=b ; 0 null null
+3 - Cookie: Cookie bar=rab ; 0 null null
+Processing [a=()<>@:\"/[]?={}	; foo=bar]
+Processing [$Version=1;foo=bar]
+Processing [$Version=0;foo=bar]
+
+
+
+Tests in error: 
+
+
