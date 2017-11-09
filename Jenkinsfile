@@ -7,6 +7,9 @@ node {
 	
 	sh "cd 'tomcat'"
 	
+	sh "pwd"
+	sh "ll"
+	
 	// String gitCommit = sh (returnStdout: true, script: 'git rev-parse HEAD').trim()
     // gradle "clean build publish -Prevision=${buildNr}--${gitCommit}"
 	
