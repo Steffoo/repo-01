@@ -1,0 +1,13 @@
+node {
+	//------------------------------------------------------------------------
+    stage name: 'deployment'
+	//------------------------------------------------------------------------
+    
+	// First copy the compiled .jar to a suiting directory.
+	sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/target/tomcat-6.0.5-jar-with-dependencies.jar" "/home/jenkins/"'
+
+	// Start Tomcat on port 8081 in the background using nohup (since default port 8080 is used by Jenkins)
+	sh 'cd "/home/jenkins" ; nohup "java -jar tomcat-6.0.5-jar-with-dependencies.jar -Dserver.port=8081" &'
+	
+} 
+
