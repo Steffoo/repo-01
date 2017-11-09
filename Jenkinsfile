@@ -12,7 +12,7 @@ node {
 	
 	buildNr = '${BUILD_NUMBER}'
 	
-	env.JAVA_HOME="${tool 'JDK1.8.0_151'}"
+	env.JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
     env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
     sh 'java -version'
     
