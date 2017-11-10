@@ -33,7 +33,7 @@ node {
     stage name: 'assembly'
 	//------------------------------------------------------------------------
 	
-	sh "cd 'tomcat' ; mvn 'clean compile assembly:single'"
+	sh "cd 'tomcat' ; mvn clean compile assembly:single"
     
 
 } 
