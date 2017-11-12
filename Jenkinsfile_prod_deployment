@@ -1,0 +1,22 @@
+node {
+	//------------------------------------------------------------------------
+	    stage name: 'killing_tomcat_process'
+	//------------------------------------------------------------------------
+	sh 'kill -9 $(ps aux | grep "java -jar tomcat-6.0.5-jar-with-dependencies.jar" | head -n1 | cut -d " " -f 3)'
+	
+	//------------------------------------------------------------------------
+    stage name: 'copying_files'
+	//------------------------------------------------------------------------
+    
+	// First copy the compiled .jar to a suiting directory.
+	sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/target/tomcat-6.0.5-jar-with-dependencies.jar" "/var/lib/jenkins/production"'
+
+	//------------------------------------------------------------------------
+	    stage name: 'starting_tomcat'
+	//------------------------------------------------------------------------
+
+	// Start Tomcat on port 8082 in the background using nohup (since default port 8080 is used by Jenkins)
+	sh 'cd "/var/lib/jenkins/production" ; nohup "java -jar tomcat-6.0.5-jar-with-dependencies.jar" &'
+	
+} 
+
