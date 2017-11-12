@@ -7,35 +7,42 @@
 Im Rahmen der Vorlesung LSD (Large-Scale-Development) sollten die Autoren dieses Dokuments den Opensource-Build-Server *Jenkins* aufsetzen und eine Build-Pipeline anlegen, welche den in vorherigen Assignments bereits behandelten Tomcat 6.0.5 baut. Dieses Dokument ist in folgende Teile untergliedert:
 
 1. Installation von Jenkins auf einem Ubuntu-Server
-2. Konfiguration des Build-Jobs in Jenkins
+2. Konfiguration der Build-Jobs in Jenkins
 	1. Erstellung eines Jenkinsfile
 	2. Weitere Konfiguration auf der Weboberfläche von Jenkins
-	
+
 # Installation von Jenkins auf einem Ubuntu-Server
 
-Da das Ubuntu Server-Betriebssystem mit der Paketverwaltung \texttt{apt-get} darherkommt, konnte diese auf relativ simple Weise dazu benutzt werden, das Jenkins-Paket zu installieren. Jedoch war dieses nicht in den Standard-Paketquellen zu finden, sodass eine spezielle von den Entwicklern der Software hinzugefügt werden musste. Genauer wurde wie folgt vorgegangen:
+Da das Ubuntu Server-Betriebssystem mit der Paketverwaltung \texttt{apt-get} darherkommt, konnte diese auf relativ simple Weise dazu benutzt werden, das Jenkins-Paket zu installieren. Jedoch war dieses nicht in den Standard-Paketquellen zu finden, sodass eine spezielle von den Entwicklern der Software hinzugefügt werden musste. Im Großen und Ganzen wurde sich hierbei an die offizielle Anleitung[^1] gehalten. Genauer wurde wie folgt vorgegangen:
 
 1. Manuelles Hinzufügen des Publickeys der Jenkins.io - Server, damit diesen vertraut wird
-2. Hinzufügen der Jenkins-Paketquelle durch 
+2. Hinzufügen der Jenkins-Paketquelle durch
 ```bash
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable 
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable
 binary/ > /etc/apt/sources.list.d/jenkins.list'
 ```
-3. Aktualisieren der Paketquellen sowie Installation des Pakets durch 
+3. Aktualisieren der Paketquellen sowie Installation des Pakets durch
 ```bash
 sudo apt-get update ; sudo apt-get install jenkins
 ```
 4. Da der Paketmanager nach der Installation von selbst `service start jenkins` aufruft, läuft Jenkins ab sofort unter \texttt{http://<IP-des-Servers>:8080}.
 
-# Konfiguration des Build-Jobs in Jenkins
+[^1]: [https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 
-Die Build-Jobs, die in Jenkins zum Kompilieren des Java-Codes, zum Ausführen der Tests sowie zum Deployen des fertigen \texttt{.jar}-Archivs wurden primär über sogenannte *Pipelines* anhand von *Jenkinsfiles* erstellt. Hierbei handelt es sich um Scripte, welche in der Sprache Groovy geschrieben werden und sich in Stages unterteilen. Dies sind Abschnitte, welche später auch in der Weboberfläche von Jenkins sichtbar werden. Der Inhalt des \texttt{Jenkinsfile} wurde zunächst direkt in der Weboberfläche eingetragen, nach dem ersten Build-Durchlauf konnte jedoch diese Datei aus dem Github-Repository heruntergeladen werden und anschließend von dort verwendet werden.
+# Konfiguration der Build-Jobs in Jenkins
+
+Die Build-Jobs, die in Jenkins zum Kompilieren des Java-Codes, zum Ausführen der Tests sowie zum Deployen des fertigen \texttt{.jar}-Archivs wurden primär über sogenannte *Pipelines* anhand von *Jenkinsfiles* erstellt. Hierbei handelt es sich um Scripte, welche in der Sprache Groovy geschrieben werden und sich in Stages unterteilen. Dies sind Abschnitte, welche später auch in der Weboberfläche von Jenkins sichtbar werden. Der Inhalt des \texttt{Jenkinsfile} wurde zunächst direkt in der Weboberfläche eingetragen, nach dem ersten Build-Durchlauf konnte jedoch diese Datei aus dem Github-Repository heruntergeladen werden und anschließend von dort verwendet werden. Insgesamt wurden mehrere Build-Jobs für folgende Zwecke erstellt, damit die Aufgaben strikt getrennt sind:
+
+- **Jenkins:** CI-Zweig zum Kompilieren des Sourcecodes, Testens und erstellen einer \texttt{.jar}-Datei.
+- **Jenkins_Deployment:** Deployment (kopieren des \texttt{.jar}-Files an eine definierte stellen sowie beenden des alten Tomcat-Prozesses und starten eines neuen) der Ergebnisse von **Jenkins**.
+- **Jenkins_Prod:** Siehe **Jenkins**, lediglich eine stabilere Version, die erst gebaut wird, sobald ersterer Job erfolgreich war.
+- **Jenkins_Prod_Deployment:** Analog zu **Jenkins_Deployment**
 
 ## Erstellung eines Jenkinsfile
 
-Das folgende Listing zeigt das vollständige Jenkinsfile, welches für dieses Projekt benutzt wurde. Im Anschluss werden die einzelnen Schritte erklärt.
+Das folgende Listing zeigt eines der erstellten Jenkinsfiles, welches für dieses Projekt benutzt wurde. Es handelt sich um die Datei \texttt{Jenkinsfile\_CI\_build}, welche für den ersten Build-Job **Jenkins** benutzt wird. Das Script für **Jenkins_Prod** fällt identisch aus. Es wurde jedoch an einem separatem Pfad abgelegt, um es zukünftig leichter austauschen zu können.
 
-~~~{.groovy .numberLines stepnumber=5 caption="Jenkinsfile zum Bauen, Testen und Verbreiten von Tomcat mit Maven"}
+~~~{.groovy .numberLines stepnumber=5 frame=single captionpos=b, caption="Jenkinsfile zum Bauen, Testen und Archivieren von Tomcat mit Maven"}
 node {
 	//-----------------
     stage name: 'clean'
@@ -47,17 +54,47 @@ node {
 	//-----------------
     stage name: 'compile'
 	//-----------------
-	sh "pwd"
     sh "cd 'tomcat' ; mvn 'compile'"
     //-----------------
     stage name: 'test'
-    //-----------------	
+    //-----------------
     sh "cd 'tomcat' ; mvn test"
     //-----------------
     stage name: 'assembly'
 	//-----------------
 	sh "cd 'tomcat' ; mvn assembly:single"
-} 
+}
 ~~~
+Dieses Script ist in die vier Stages *clean*, *compile*, *test* und *assembly* aufgeteilt. In *clean* wird das in Jenkins angegebene SCM[^2] ausgecheckt, die Umgebungsvariablen \texttt{JAVA\_HOME} und \texttt{JAVA\_PATH} gesetzt sowie \texttt{mvn clean} ausgeführt, was die zuvor Kompilierten Dateien löscht. In *compile* wird das gleichnamige Maven-Target aufgerufen, welches den Java-Sourcecode kompiliert. In *test* werden analog dazu mit Maven die Tests ausgeführt. Abschließend wird in *assembly* der Befehl \texttt{mvn assembly:single} auf die Shell gegeben, welcher eine ausführbare \texttt{.jar}-Datei erstellt.
 
+[^2]: Source Code Management
 
+Die Jenkinsfiles für das Deployment fallen deutlich kürzer aus:
+
+~~~{.groovy .numberLines stepnumber=5 frame=single captionpos=b, caption="Jenkinsfile zum Verbreiten von Tomcat mit Maven"}
+node {
+	//-----------------
+	    stage name: 'killing_tomcat_process'
+	//-----------------
+	sh '/var/lib/jenkins/kill_tomcat.sh CI'
+	//-----------------
+    stage name: 'copying_files'
+	//-----------------
+	sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/ \   
+	target/tomcat-6.0.5-jar-with-dependencies.jar" \   
+	"/var/lib/jenkins/tomcat-6.0.5-CI.jar"'
+	//-----------------
+	    stage name: 'starting_tomcat'
+	//-----------------
+	sh 'cd "/var/lib/jenkins" ; \
+	nohup java -jar tomcat-6.0.5-CI.jar &'
+}
+~~~
+Zunächst wird in der Stage *killing_tomcat_process* mit einem kleinen selbstgeschriebenen Script[^3] bei Bedarf der aktuell laufende Tomcat-Prozess beendet. Danach wird das zuvor erzeugte Java-Archive an die vorgesehene Stelle kopiert. Zuletzt wird dieses mithilfe des Befehls \texttt{nohup}, welcher die Ausgabe eines Befehls in eine Log-Datei umleitet, im Hintergrund (durch Verwendung von **&** am Ende des Befehls) gestartet. Hierbei ist noch zu erwähnen, dass die .jar und somit der Tomcat nicht startet, insofern im selben Verzeichnis nicht die Unterverzeichnisse \texttt{conf} und \texttt{webapps} liegen und mit entsprechendem Inhalt gefüllt sind. Ersteres Verzeichnis enhält ein paar Konfiguration zu Tomcat im \texttt{.xml}-Format[^4], letzteres Benutzerinhalt wie Servlets und JSPs.
+
+[^3]: Dieses kann hier bei Github gefunden werden: _TODO: Link einfügen!_
+[^4]: Hier musste zudem die Datei \texttt{server.xml} bearbeitet werden, um den Standardport *8080* von Tomcat auf *8081* zu ändern, da hier ja bereits der Jenkins läuft.
+
+## Weitere Konfiguration auf der Weboberfläche von Jenkins
+
+*TODO: Hier müssen noch die Screenshots eingefügt und beschrieben werden!*
