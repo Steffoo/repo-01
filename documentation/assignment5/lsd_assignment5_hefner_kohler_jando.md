@@ -92,7 +92,7 @@ node {
 ~~~
 Zunächst wird in der Stage *killing_tomcat_process* mit einem kleinen selbstgeschriebenen Script[^3] bei Bedarf der aktuell laufende Tomcat-Prozess beendet. Danach wird das zuvor erzeugte Java-Archive an die vorgesehene Stelle kopiert. Zuletzt wird dieses mithilfe des Befehls \texttt{nohup}, welcher die Ausgabe eines Befehls in eine Log-Datei umleitet, im Hintergrund (durch Verwendung von **&** am Ende des Befehls) gestartet. Hierbei ist noch zu erwähnen, dass die .jar und somit der Tomcat nicht startet, insofern im selben Verzeichnis nicht die Unterverzeichnisse \texttt{conf} und \texttt{webapps} liegen und mit entsprechendem Inhalt gefüllt sind. Ersteres Verzeichnis enhält ein paar Konfiguration zu Tomcat im \texttt{.xml}-Format[^4], letzteres Benutzerinhalt wie Servlets und JSPs.
 
-[^3]: Dieses kann hier bei Github gefunden werden: _TODO: Link einfügen!_
+[^3]: Dieses kann hier bei Github gefunden werden: [Script \texttt{kill\_tomcat.sh} auf Github](https://github.com/lsd-lecture/repo-01/blob/master/kill_tomcat.sh)
 [^4]: Hier musste zudem die Datei \texttt{server.xml} bearbeitet werden, um den Standardport *8080* von Tomcat auf *8081* zu ändern, da hier ja bereits der Jenkins läuft.
 
 ## Weitere Konfiguration auf der Weboberfläche von Jenkins
