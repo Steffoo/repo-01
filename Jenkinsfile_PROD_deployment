@@ -9,14 +9,14 @@ node {
 	//------------------------------------------------------------------------
     
 	// First copy the compiled .jar to a suiting directory.
-	sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/target/tomcat-6.0.5-jar-with-dependencies.jar" "/var/lib/jenkins/production"'
+	sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/target/tomcat-6.0.5-jar-with-dependencies.jar" "/var/lib/jenkins/production/tomcat-6.0.5-PROD.jar"'
 
 	//------------------------------------------------------------------------
 	    stage name: 'starting_tomcat'
 	//------------------------------------------------------------------------
 
 	// Start Tomcat on port 8082 in the background using nohup (since default port 8080 is used by Jenkins)
-	sh 'cd "/var/lib/jenkins/production" ; nohup java -jar tomcat-6.0.5-jar-with-dependencies.jar &'
+	sh 'cd "/var/lib/jenkins/production" ; nohup java -jar tomcat-6.0.5-PROD.jar &'
 	
 } 
 
