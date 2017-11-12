@@ -16,7 +16,7 @@ node {
 	//------------------------------------------------------------------------
 
 	// Start Tomcat on port 8082 in the background using nohup (since default port 8080 is used by Jenkins)
-	sh 'cd "/var/lib/jenkins/production" ; nohup "java -jar tomcat-6.0.5-jar-with-dependencies.jar" &'
+	sh 'cd "/var/lib/jenkins/production" ; nohup java -jar tomcat-6.0.5-jar-with-dependencies.jar &'
 	
 } 
 
