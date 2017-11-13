@@ -110,4 +110,36 @@ Zunächst wird in der Stage *killing_tomcat_process* mit einem kleinen selbstges
 
 ## Weitere Konfiguration auf der Weboberfläche von Jenkins
 
-*TODO: Hier müssen noch die Screenshots eingefügt und beschrieben werden!*
+Die nachstehende Abbildung zeigt sämtliche Jobs die wir in Jenkins angelegt haben. Die Grünen Ampellichter geben an ob der Build erfolgreich war (Rot=fehlschlag, Grau=schedulded). Das Wetter gibt den durchschnittliche erfolgsrate der letzten 5 builds an je schlechter das Wetter desto mehr Fehlschläge gab es [^5]. 
+
+![Überblick über die Jenkins-Jobs](pictures/job_overview.png)
+
+[^5]: [https://wiki.jenkins.io/display/JENKINS/Dashboard+View](https://wiki.jenkins.io/display/JENKINS/Dashboard+View)
+
+![Überblick der Laufzeiten des Jenkins-Jobs **Tomcat**](pictures/stage_view.png)
+
+In dieser Übersicht sind die einzelnen Build Prozesse (stages) des **Tomcat**-Jobs aufgeführt, sowie ob diese Erfolgreich waren und wie lange sie gebraucht haben. Außerdem wird  die durschnittliche Zeit der Stages angezeigt. 
+
+![Generelle Einstellungen](pictures/general_settings.png)
+
+Hier wird der Name der Pipeline (**Tomcat**) angegeben und welche Art von Projekt (Github-Project) dies ist. Im zusammenhang dazu muss die URL des Repositories angegeben werden von dem dann gebaut wird. 
+
+![Auslöser für den Build](pictures/build_triggers.png)
+
+Mit diesem Parameter wird angegeben in welchen Intervallen überprüft werden soll ob Änderungen im Git-repository stattgefunden haben. In unserem Fall wird dies jede Minute überprüft. Wie Cron-Zeitangaben angegeben werden ist hier [^6] erläutert. Liegen Änderungen vor werden diese gepollt und gebuilded.
+
+[^6]: [https://help.ubuntu.com/community/CronHowto](https://help.ubuntu.com/community/CronHowto)
+
+![Pipeline Einstellungen](pictures/pipeline_settings.png)
+
+Hier werden die Credentials [^7] des Git-Projektes ausgefüllt um sich bei Github zu Authentifizieren. Des Weiteren muss die Git-Branch spezifiziert werden. Als letztes haben wir den Pfad zum Pipeline-Skript angegeben (Jenkinsfile_CI_build)
+
+[^7]: Username und der bei Github hinterlegte Public-Key
+
+
+Als nächste Einstellung haben wir bestimmt, dass der **Tomcat_Deployment**-Job erst dann ausgeführt wird, wenn der **Tomcat**-Job erfolgreich abgeschlossen wurde. 
+
+![Abhängigkeiten zwischen Jenkins-Jobs](pictures/job_dependencies.png)
+
+
+
