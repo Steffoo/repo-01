@@ -110,36 +110,43 @@ Zunächst wird in der Stage *killing_tomcat_process* mit einem kleinen selbstges
 
 ## Weitere Konfiguration auf der Weboberfläche von Jenkins
 
-Die nachstehende Abbildung zeigt sämtliche Jobs die wir in Jenkins angelegt haben. Die Grünen Ampellichter geben an ob der Build erfolgreich war (Rot=fehlschlag, Grau=schedulded). Das Wetter gibt den durchschnittliche erfolgsrate der letzten 5 builds an je schlechter das Wetter desto mehr Fehlschläge gab es [^5]. 
+Im folgenden werden Schritt für Schritt sämtliche Einstellungen, die wir für die von uns angelegten Jenkins-Pipelines getätgit haben, anhand von Screenshots gezeigt und anschließend genauer erläutert.
+
+Die nachstehende Abbildung zeigt sämtliche Jobs die wir in Jenkins angelegt haben. Die Ampellichter geben an, ob der Build erfolgreich war[^5]. Das Wetter gibt den durchschnittliche erfolgsrate der letzten 5 builds an je schlechter das Wetter desto mehr Fehlschläge gab es [^6]. 
 
 ![Überblick über die Jenkins-Jobs](pictures/job_overview.png)
 
-[^5]: [https://wiki.jenkins.io/display/JENKINS/Dashboard+View](https://wiki.jenkins.io/display/JENKINS/Dashboard+View)
+
+[^5]: Grün=Erfolg, Rot=Fehlschlag, Grau=Geplant, aber noch nicht gestartet
+[^6]: [https://wiki.jenkins.io/display/JENKINS/Dashboard+View](https://wiki.jenkins.io/display/JENKINS/Dashboard+View)
+
+In der folgenden Übersicht, welche in Jenkins *Stage View* genannt wird, sind die einzelnen Build Prozesse (stages) des **Tomcat**-Jobs aufgeführt, sowie ob diese Erfolgreich waren und wie lange sie gebraucht haben. Außerdem wird  die durschnittliche Zeit der Stages angezeigt. 
 
 ![Überblick der Laufzeiten des Jenkins-Jobs **Tomcat**](pictures/stage_view.png)
 
-In dieser Übersicht sind die einzelnen Build Prozesse (stages) des **Tomcat**-Jobs aufgeführt, sowie ob diese Erfolgreich waren und wie lange sie gebraucht haben. Außerdem wird  die durschnittliche Zeit der Stages angezeigt. 
-
 ![Generelle Einstellungen](pictures/general_settings.png)
+
+\newpage{}
 
 Hier wird der Name der Pipeline (**Tomcat**) angegeben und welche Art von Projekt (Github-Project) dies ist. Im zusammenhang dazu muss die URL des Repositories angegeben werden von dem dann gebaut wird. 
 
 ![Auslöser für den Build](pictures/build_triggers.png)
 
-Mit diesem Parameter wird angegeben in welchen Intervallen überprüft werden soll ob Änderungen im Git-repository stattgefunden haben. In unserem Fall wird dies jede Minute überprüft. Wie Cron-Zeitangaben angegeben werden ist hier [^6] erläutert. Liegen Änderungen vor werden diese gepollt und gebuilded.
+Mit diesem Parameter wird angegeben in welchen Intervallen überprüft werden soll ob Änderungen im Git-repository stattgefunden haben. In unserem Fall wird dies jede Minute überprüft. Wie Cron-Zeitangaben angegeben werden ist hier [^7] erläutert. Liegen Änderungen vor werden diese gepollt und gebuilded.
 
-[^6]: [https://help.ubuntu.com/community/CronHowto](https://help.ubuntu.com/community/CronHowto)
+\newpage{}
+
+[^7]: [https://help.ubuntu.com/community/CronHowto](https://help.ubuntu.com/community/CronHowto)
 
 ![Pipeline Einstellungen](pictures/pipeline_settings.png)
 
-Hier werden die Credentials [^7] des Git-Projektes ausgefüllt um sich bei Github zu Authentifizieren. Des Weiteren muss die Git-Branch spezifiziert werden. Als letztes haben wir den Pfad zum Pipeline-Skript angegeben (Jenkinsfile_CI_build)
+Hier werden die Credentials [^8] des Git-Projektes ausgefüllt um sich bei Github zu Authentifizieren. Des Weiteren muss die Git-Branch spezifiziert werden. Als letztes haben wir den Pfad zum Pipeline-Skript angegeben (Jenkinsfile_CI_build)
 
-[^7]: Username und der bei Github hinterlegte Public-Key
+[^8]: Username und der bei Github hinterlegte Public-Key 
 
+![Abhängigkeiten zwischen Jenkins-Jobs](pictures/job_dependency.png)
 
-Als nächste Einstellung haben wir bestimmt, dass der **Tomcat_Deployment**-Job erst dann ausgeführt wird, wenn der **Tomcat**-Job erfolgreich abgeschlossen wurde. 
-
-![Abhängigkeiten zwischen Jenkins-Jobs](pictures/job_dependencies.png)
+Manche unserer Jenkins-Jobs, nämlich die beiden für das Deployment, sind abhängig von den Build-Jobs, da ja nur etwas verbreitet werden kann, wenn es erfolgreich gebaut wurde. Deshalb haben wir beispielsweise bestimmt, dass der **Tomcat_Deployment**-Job erst dann ausgeführt wird, wenn der **Tomcat**-Job erfolgreich abgeschlossen wurde.
 
 
 
