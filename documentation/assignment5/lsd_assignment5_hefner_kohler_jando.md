@@ -8,12 +8,12 @@ Im Rahmen der Vorlesung LSD (Large-Scale-Development) sollten die Autoren dieses
 
 1. Installation von Jenkins auf einem Ubuntu-Server
 2. Konfiguration der Build-Jobs in Jenkins
-	1. Erstellung eines Jenkinsfile
+	1. Erstellung der Jenkinsfiles
 	2. Weitere Konfiguration auf der Weboberfläche von Jenkins
 
 # Installation von Jenkins auf einem Ubuntu-Server
 
-Da das Ubuntu Server-Betriebssystem mit der Paketverwaltung \texttt{apt-get} darherkommt, konnte diese auf relativ simple Weise dazu benutzt werden, das Jenkins-Paket zu installieren. Jedoch war dieses nicht in den Standard-Paketquellen zu finden, sodass eine spezielle von den Entwicklern der Software hinzugefügt werden musste. Im Großen und Ganzen wurde sich hierbei an die offizielle Anleitung[^1] gehalten. Genauer wurde wie folgt vorgegangen:
+Da das Ubuntu Server-Betriebssystem mit der Paketverwaltung \texttt{apt-get} ausgeliefert wird, konnte diese auf relativ simple Weise dazu benutzt werden, das Jenkins-Paket zu installieren. Jedoch war dieses nicht in den Standard-Paketquellen zu finden, sodass eine spezielle von den Entwicklern der Software hinzugefügt werden musste. Im Großen und Ganzen wurde sich hierbei an die offizielle Anleitung[^1] gehalten. Genauer wurde wie folgt vorgegangen:
 
 1. Manuelles Hinzufügen des Publickeys der Jenkins.io - Server, damit diesen vertraut wird
 2. Hinzufügen der Jenkins-Paketquelle durch
@@ -25,7 +25,7 @@ binary/ > /etc/apt/sources.list.d/jenkins.list'
 ```bash
 sudo apt-get update ; sudo apt-get install jenkins
 ```
-4. Da der Paketmanager nach der Installation von selbst `service start jenkins` aufruft, läuft Jenkins ab sofort unter \texttt{http://<IP-des-Servers>:8080}.
+4. Da der Paketmanager nach der Installation von selbst den Befehl \texttt{service start jenkins} aufruft, läuft Jenkins ab sofort unter \texttt{http://<IP-des-Servers>:8080}.
 
 [^1]: [https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 
@@ -33,35 +33,43 @@ sudo apt-get update ; sudo apt-get install jenkins
 
 Die Build-Jobs, die in Jenkins zum Kompilieren des Java-Codes, zum Ausführen der Tests sowie zum Deployen des fertigen \texttt{.jar}-Archivs wurden primär über sogenannte *Pipelines* anhand von *Jenkinsfiles* erstellt. Hierbei handelt es sich um Scripte, welche in der Sprache Groovy geschrieben werden und sich in Stages unterteilen. Dies sind Abschnitte, welche später auch in der Weboberfläche von Jenkins sichtbar werden. Der Inhalt des \texttt{Jenkinsfile} wurde zunächst direkt in der Weboberfläche eingetragen, nach dem ersten Build-Durchlauf konnte jedoch diese Datei aus dem Github-Repository heruntergeladen werden und anschließend von dort verwendet werden. Insgesamt wurden mehrere Build-Jobs für folgende Zwecke erstellt, damit die Aufgaben strikt getrennt sind:
 
-- **Jenkins:** CI-Zweig zum Kompilieren des Sourcecodes, Testens und erstellen einer \texttt{.jar}-Datei.
-- **Jenkins_Deployment:** Deployment (kopieren des \texttt{.jar}-Files an eine definierte stellen sowie beenden des alten Tomcat-Prozesses und starten eines neuen) der Ergebnisse von **Jenkins**.
-- **Jenkins_Prod:** Siehe **Jenkins**, lediglich eine stabilere Version, die erst gebaut wird, sobald ersterer Job erfolgreich war.
-- **Jenkins_Prod_Deployment:** Analog zu **Jenkins_Deployment**
+- **Jenkins_CI_Build:** Jenkins-Job zum Kompilieren des Sourcecodes, Testens und erstellen einer \texttt{.jar}-Datei.
+- **Jenkins_CI_Deployment:** Deployment (kopieren des \texttt{.jar}-Files an eine definierte stellen sowie beenden des alten Tomcat-Prozesses und starten eines neuen) der Ergebnisse von **Jenkins**.
+- **Jenkins_Prod_Build:** Siehe **Jenkins_CI_Build**, lediglich ein weiterer Build, um eventuelle Auslieferung (Production) anbieten zu können, ohne die Entwicklung im CI-Build zu beeinflussen. Dieser Build wird erst gebaut, sobald der CI-Build erfolgreich war.
+- **Jenkins_Prod_Deployment:** Analog zu **Jenkins_CI_Deployment**
 
-## Erstellung eines Jenkinsfile
+## Erstellung der Jenkinsfiles
 
-Das folgende Listing zeigt eines der erstellten Jenkinsfiles, welches für dieses Projekt benutzt wurde. Es handelt sich um die Datei \texttt{Jenkinsfile\_CI\_build}, welche für den ersten Build-Job **Jenkins** benutzt wird. Das Script für **Jenkins_Prod** fällt identisch aus. Es wurde jedoch an einem separatem Pfad abgelegt, um es zukünftig leichter austauschen zu können.
+Das folgende Listing zeigt eines der erstellten Jenkinsfiles, welches für dieses Projekt benutzt wurde. Es handelt sich um die Datei \texttt{Jenkinsfile\_CI\_build}, welche für den ersten Build-Job **Jenkins_CI_Build** benutzt wird. Das Script für **Jenkins_Prod_Build** fällt identisch aus. Es wurde jedoch an einem separatem Pfad abgelegt, um es zukünftig leichter austauschen zu können.
 
-~~~{.groovy .numberLines stepnumber=5 frame=single captionpos=b, caption="Jenkinsfile zum Bauen, Testen und Archivieren von Tomcat mit Maven"}
+~~~{.groovy .numberLines stepnumber=6 frame=single captionpos=b, caption="Jenkinsfile zum Bauen, Testen und Archivieren von Tomcat mit Maven"}
 node {
+
 	//-----------------
     stage name: 'clean'
 	//-----------------
+	
 	checkout scm
 	env.JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
     env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
 	sh "cd 'tomcat' ; mvn 'clean'"
+	
 	//-----------------
     stage name: 'compile'
 	//-----------------
+	
     sh "cd 'tomcat' ; mvn 'compile'"
+    
     //-----------------
     stage name: 'test'
     //-----------------
+    
     sh "cd 'tomcat' ; mvn test"
+    
     //-----------------
-    stage name: 'assembly'
+    stage name: 'assembly
 	//-----------------
+	
 	sh "cd 'tomcat' ; mvn assembly:single"
 }
 ~~~
@@ -71,18 +79,23 @@ Dieses Script ist in die vier Stages *clean*, *compile*, *test* und *assembly* a
 
 Die Jenkinsfiles für das Deployment fallen deutlich kürzer aus:
 
-~~~{.groovy .numberLines stepnumber=5 frame=single captionpos=b, caption="Jenkinsfile zum Verbreiten von Tomcat mit Maven"}
+~~~{.groovy .numberLines stepnumber=6 frame=single captionpos=b, caption="Jenkinsfile zum Verbreiten von Tomcat mit Maven"}
 node {
+
 	//-----------------
-	    stage name: 'killing_tomcat_process'
+	stage name: 'killing_tomcat_process'
 	//-----------------
+	
 	sh '/var/lib/jenkins/kill_tomcat.sh CI'
+	
 	//-----------------
     stage name: 'copying_files'
 	//-----------------
+	
 	sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/ \   
 	target/tomcat-6.0.5-jar-with-dependencies.jar" \   
 	"/var/lib/jenkins/tomcat-6.0.5-CI.jar"'
+	
 	//-----------------
 	    stage name: 'starting_tomcat'
 	//-----------------
