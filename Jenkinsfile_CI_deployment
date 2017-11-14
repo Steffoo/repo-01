@@ -1,22 +1,20 @@
-node {
-	//------------------------------------------------------------------------
-	    stage name: 'killing_tomcat_process'
-	//------------------------------------------------------------------------
-	sh '/var/lib/jenkins/kill_tomcat.sh CI'
-	
-	//------------------------------------------------------------------------
-    stage name: 'copying_files'
-	//------------------------------------------------------------------------
-    
-	// First copy the compiled .jar to a suiting directory.
-	sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/target/tomcat-6.0.5-jar-with-dependencies.jar" "/var/lib/jenkins/tomcat-6.0.5-CI.jar"'
-
-	//------------------------------------------------------------------------
-	    stage name: 'starting_tomcat'
-	//------------------------------------------------------------------------
-
-	// Start Tomcat on port 8081 in the background using nohup (since default port 8080 is used by Jenkins)
-	sh 'cd "/var/lib/jenkins" ; nohup java -jar tomcat-6.0.5-CI.jar &'
-	
-} 
+pipeline {
+	stages {
+		stage('killing_tomcat_process') {
+			steps {
+				sh '/var/lib/jenkins/kill_tomcat.sh CI'
+			}
+		}
+		stage('copying_files') {
+			steps {
+				sh 'cp "/var/lib/jenkins/workspace/Tomcat/tomcat/target/tomcat-6.0.5-jar-with-dependencies.jar" "/var/lib/jenkins/tomcat-6.0.5-CI.jar"'
+			}
+		}
+		stage('starting_tomcat') {
+			steps {
+				sh 'cd "/var/lib/jenkins" ; nohup java -jar tomcat-6.0.5-CI.jar &'
+			}
+		}
+	}
+}
 
