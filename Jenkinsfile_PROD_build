@@ -2,10 +2,12 @@ pipeline {
 	agent any
 	stages {
 		stage('clean') {
+			environment { 
+                JAVA_HOME = "/usr/lib/jvm/java-8-openjdk-amd64"
+                PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
+            }
 			steps {
 				checkout scm
-				env.JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-				env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
 				sh "cd 'tomcat' ; mvn 'clean'"
 			}
 		}
