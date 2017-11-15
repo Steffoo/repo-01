@@ -59,9 +59,10 @@ pipeline {
 	stages {
 		stage('clean') {
 			environment {
-                JAVA_HOME = "/usr/lib/jvm/java-8-openjdk-amd64"
-                PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
-            }
+					JAVA_HOME="/usr/lib/jvm/ \
+							java-8-openjdk-amd64"
+        			PATH="${env.JAVA_HOME}/bin:${env.PATH}"
+      		}
 			steps {
 				checkout scm
 				sh "cd 'tomcat' ; mvn 'clean'"
@@ -79,7 +80,8 @@ pipeline {
 		}
 		stage('assembly') {
 			steps {
-				sh "cd 'tomcat' ; mvn clean compile assembly:single"
+				sh "cd 'tomcat' ; \
+				mvn clean compile assembly:single"
 			}
 		}
 	}
@@ -169,7 +171,7 @@ Liegen Änderungen vor werden diese vom Repostory geholt und anschließend gebau
 
 ![Pipeline Einstellungen\label{fig:pipeline_settings}](pictures/pipeline_settings.png)
 
-Wie in \ref{fig:pipeline_settings} zu sehen ist, werden die Credentials[^10] des Git-Projektes ausgefüllt, um sich bei Github zu Authentifizieren.
+Wie in Abbildung \ref{fig:pipeline_settings} zu sehen ist, werden die Credentials[^10] des Git-Projektes ausgefüllt, um sich bei Github zu Authentifizieren.
 Des Weiteren muss der Git-Branch spezifiziert werden.
 
 [^10]: Username und der bei Github hinterlegte Public-Key
