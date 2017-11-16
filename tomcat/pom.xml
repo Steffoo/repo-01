@@ -12,23 +12,28 @@
     <properties>
     </properties>
 
+	<reporting>
+	    <plugins>
+	      <plugin>
+	        <groupId>org.codehaus.mojo</groupId>
+	        <artifactId>findbugs-maven-plugin</artifactId>
+	        <version>3.0.6-SNAPSHOT</version>
+	      </plugin>
+	    </plugins>
+	</reporting>
+	
     <build>
 		<plugins>
-		<!--<plugin>-->
-		  <!--<groupId>org.codehaus.mojo</groupId>-->
-		  <!--<artifactId>emma-maven-plugin</artifactId>-->
-		  <!--<version>1.0-alpha-3</version>-->
-		  <!--<inherited>true</inherited>-->
-		  <!--<executions>-->
-		    <!--<execution>-->
-		    <!--<phase>process-classes</phase>-->
-		    <!--<goals>-->
-		      <!--<goal>instrument</goal>-->
-		    <!--</goals>-->
-		    <!--</execution>-->
-		  <!--</executions>-->
-		 <!--</plugin>-->
-		<plugin>
+			<plugin>
+		        <groupId>org.codehaus.mojo</groupId>
+		        <artifactId>findbugs-maven-plugin</artifactId>
+		        <version>3.0.6-SNAPSHOT</version>
+				<configuration>
+					<xmlOutput>true</xmlOutput>
+					<xmlOutputDirectory>target/site</xmlOutputDirectory>
+				</configuration>
+			 </plugin>
+			<plugin>
 		                    <groupId>org.apache.maven.plugins</groupId>
 		                    <artifactId>maven-pmd-plugin</artifactId>
 		                    <version>3.8</version>
@@ -60,7 +65,11 @@
     </build>
 
     <dependencies>	
-   	
+   		 <dependency>
+   		     <groupId>org.codehaus.mojo</groupId>
+   		     <artifactId>findbugs-maven-plugin</artifactId>
+   		     <version>3.0.5</version>
+   		 </dependency>
 		 <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
