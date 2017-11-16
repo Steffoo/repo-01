@@ -37,5 +37,13 @@ pipeline {
 			}
 		}
 	}
+	post {
+	        always {
+	            archive "target/*.jar"
+	            archive "target/pmd.xml"
+	            archive "target/site/emma/*"
+	            junit 'target/surefire-reports/*.xml'
+	        }
+	}
 }
 
