@@ -17,10 +17,18 @@ pipeline {
 			}
 		}
 		stage('test') {
-			steps {
-				sh "cd 'tomcat' ; mvn test"
-			}
+				steps {
+					// Since `emma` needs the tests for generating test coverage
+					// reports, its target executes the test-target as well.
+					// That's why we don't need the `mvn test`-target anymore
+					sh "cd 'tomcat' ; mvn emma:emma"
+				}
 		}
+		stage('pmd') {
+				steps {
+					sh "cd 'tomcat' ; mvn pwd:check"
+				}
+		}			
 		stage('assembly') {
 			steps {
 				sh "cd 'tomcat' ; mvn clean compile assembly:single"

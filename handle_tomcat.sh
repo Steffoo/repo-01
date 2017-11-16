@@ -7,7 +7,7 @@ else
   cd $proddir
 fi
 cmd="java -jar tomcat-6.0.5-$1.jar"
-ps | grep "$cmd" | awk '{print $1}' | xargs kill -9 || true
+ps | grep "$cmd" | awk '{print $1}' | xargs kill -SIGTERM || true
 
 BUILD_ID=do_not_kill_me
 java -jar tomcat-6.0.5-$1.jar &
