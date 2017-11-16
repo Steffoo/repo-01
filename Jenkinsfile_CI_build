@@ -22,7 +22,7 @@ pipeline {
 		}
 		stage('pmd') {
 			steps {
-				sh "cd 'tomcat' ; mvn pwd:check"
+				sh "cd 'tomcat' ; mvn pmd:check"
 			}
 		}
 		stage('assembly') {
