@@ -13,7 +13,9 @@ pipeline {
 			}
 		}
 		stage('findbugs') {
-			sh "cd 'tomcat' ; mvn site"
+			steps {
+				sh "cd 'tomcat' ; mvn site"
+			}
 		}
 		stage('pmd') {
 			steps {
