@@ -33,7 +33,7 @@ pipeline {
 		}
 		stage('assembly') {
 			steps {
-				sh "cd 'tomcat' ; mvn assembly:single"
+				sh "cd 'tomcat' ; mvn compile assembly:single"
 			}
 		}
 	}
@@ -41,7 +41,8 @@ pipeline {
 	        always {
 	            archive "tomcat/target/*.jar"
 	            archive "tomcat/target/pmd.xml"
-	            archive "tomcat/target/site/emma/*"
+	            sh "cd 'tomcat/target' ; zip -r site.zip site"
+	            archive "tomcat/target/site.zip"
 	            junit 'tomcat/target/surefire-reports/*.xml'
 	        }
 	}
