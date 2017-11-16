@@ -39,10 +39,10 @@ pipeline {
 	}
 	post {
 	        always {
-	            archive "target/*.jar"
-	            archive "target/pmd.xml"
-	            archive "target/site/emma/*"
-	            junit 'target/surefire-reports/*.xml'
+	            archive "tomcat/target/*.jar"
+	            archive "tomcat/target/pmd.xml"
+	            archive "tomcat/target/site/emma/*"
+	            junit 'tomcat/target/surefire-reports/*.xml'
 	        }
 	}
 }
