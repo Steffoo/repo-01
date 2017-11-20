@@ -22,6 +22,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Iterator;
 
+@SuppressWarnings("PMD.CyclomaticComplexity")
 public class ArrayELResolver extends ELResolver {
 
 	private final boolean readOnly;
