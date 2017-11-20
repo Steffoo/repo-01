@@ -5,28 +5,11 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-tomcat/**/.idea/**/workspace.xml
-tomcat/**/.idea/**/tasks.xml
-tomcat/**/.idea/dictionaries
-
-# Sensitive or high-churn files:
-tomcat/.idea/**/dataSources/
-tomcat/.idea/**/dataSources.ids
-tomcat/.idea/**/dataSources.xml
-tomcat/.idea/**/dataSources.local.xml
-tomcat/.idea/**/sqlDataSources.xml
-tomcat/.idea/**/dynamic.xml
-tomcat/.idea/**/uiDesigner.xml
-
-# Gradle:
-tomcat/.idea/**/gradle.xml
-tomcat/.idea/**/libraries
+**/.idea/**
+**/.idea/**.*
 
 # CMake
 cmake-build-debug/
-
-# Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
 
 ## File-based project format:
 *.iws
