@@ -33,7 +33,7 @@ pipeline {
 		}
 		stage('assembly') {
 			steps {
-				sh "cd 'tomcat' ; mvn clean compile assembly:single"
+				sh "cd 'tomcat' ; mvn compile assembly:single"
 			}
 		}
 	}
