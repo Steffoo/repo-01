@@ -22,7 +22,7 @@
 			<plugin>
 		                    <groupId>org.apache.maven.plugins</groupId>
 		                    <artifactId>maven-pmd-plugin</artifactId>
-		                    <version>3.8</version>
+							<version>3.8</version>
 		                    <configuration>
 								<rulesets>
 									<ruleset>src/main/resources/pmd-ruleset.xml</ruleset>
@@ -110,7 +110,13 @@
 			<groupId>tomcat</groupId>
 			<artifactId>naming-factory</artifactId>
 			<version>5.0.28</version>
-		</dependency>     
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-pmd-plugin</artifactId>
+			<version>3.8</version>
+		</dependency>
     </dependencies>
     
     <reporting>

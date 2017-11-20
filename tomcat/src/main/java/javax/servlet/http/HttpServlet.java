@@ -73,6 +73,8 @@ import javax.servlet.ServletResponse;
  * @author  Various
  *
  */
+
+@SuppressWarnings("PMD.CyclomaticComplexity")
 public abstract class HttpServlet extends GenericServlet
     implements java.io.Serializable {
 

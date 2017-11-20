@@ -1,16 +1,30 @@
-<ruleset xmlns="http://codenarc.org/ruleset/1.0"
+<ruleset name="our_rules" xmlns="http://codenarc.org/ruleset/1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://codenarc.org/ruleset/1.0 http://codenarc.org/ruleset-schema.xsd"
         xsi:noNamespaceSchemaLocation="http://codenarc.org/ruleset-schema.xsd">
 
     <description>
-        Basic rule set.
-        These rules are intended to be broadly (if not universally) applicable.
+        Our rules for tomcat.
     </description>
+
+    <rule ref="rulesets/java/basic.xml">
+            <exclude name="AvoidDecimalLiteralsInBigDecimalConstructor"/>
+            <exclude name="AvoidMultipleUnaryOperators"/>
+            <exclude name="AvoidUsingOctalValues"/>
+            <exclude name="BooleanInstantiation"/>
+    </rule>
+
+	<rule ref="rulesets/java/comments.xml/CommentSize">
+			<properties>
+				<property name="maxLines" value="50"/>
+				<property name="maxLineLength" value="100"/>
+			</properties>
+	</rule>
 
     <rule ref="rulesets/java/codesize.xml/CyclomaticComplexity">
            <properties>
-               <property name="reportLevel" value="4"/>
+               <property name="reportLevel" value="7"/>
            </properties>
     </rule>
+
 </ruleset>
