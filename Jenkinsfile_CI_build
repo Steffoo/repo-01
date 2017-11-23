@@ -12,11 +12,12 @@ pipeline {
 				sh "cd 'tomcat' ; mvn 'compile'"
 			}
 		}
-		stage('findbugs') {
+/*		stage('findbugs') {
 			steps {
 				sh "cd 'tomcat' ; mvn site"
 			}
 		}
+*/
 		stage('pmd') {
 			steps {
 				// Continue even if pmd tests fail

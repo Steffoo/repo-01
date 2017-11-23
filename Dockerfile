@@ -4,4 +4,4 @@ ADD tomcat/tomcat-6.0.5-jar-with-dependencies.jar tomcat-6.0.5-jar-with-dependen
 ADD tomcat/webapps/ webapps/
 ADD tomcat/conf/ conf/
 EXPOSE 8081
-CMD java -jar tomcat-6.0.5-jar-with-dependencies.jar
+CMD nohup java -jar tomcat-6.0.5-jar-with-dependencies.jar &
