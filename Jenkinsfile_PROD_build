@@ -41,12 +41,29 @@ pipeline {
 	}
 	post {
 	        always {
+	        	// Creating all the required artifacts
 	            archive "tomcat/target/*.jar"
 	            archive "tomcat/target/pmd.xml"
 	            sh "cd 'tomcat/target' ; zip -r site.zip site"
 	            archive "tomcat/target/site.zip"
+	            sh "cd 'tomcat/' ; zip -r conf.zip conf"
+	           	archive "tomcat/conf.zip"
+	           	sh "cd 'tomcat/' ; zip -r webapps.zip webapps"
+	            archive "tomcat/webapps.zip"
 	            archive "Dockerfile"
+
+	            // Publish junit test-results
 	            junit 'tomcat/target/surefire-reports/*.xml'
+
+	            // Generate HTTP-Reports
+	            publishHTML target: [
+                       allowMissing: true,
+                       alwaysLinkToLastBuild: false,
+                       keepAll: true,
+                       reportDir: 'tomcat/target/site/',
+                       reportFiles: 'index.html',
+                       reportName: 'Reports',
+              ]
 	        }
 	}
 }
