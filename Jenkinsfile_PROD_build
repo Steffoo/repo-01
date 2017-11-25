@@ -64,7 +64,8 @@ pipeline {
 	           	archive "tomcat/conf.zip"
 	           	sh "cd 'tomcat/' ; zip -r webapps.zip webapps"
 	            archive "tomcat/webapps.zip"
-	            archive "Dockerfile"
+	            archive "Dockerfile_CI"
+	            archive "Dockerfile_PROD"
 
 	            // Publish junit test-results
 	            junit 'tomcat/target/surefire-reports/*.xml'
