@@ -60,6 +60,8 @@ pipeline {
 	            archive "tomcat/target/pmd.xml"
 	            sh "cd 'tomcat/target' ; zip -r site.zip site"
 	            archive "tomcat/target/site.zip"
+	            // Replace Port 8081 with 8082 in the config of tomcat
+	            sh "cd 'tomcat/conf' ; sed -i 's/8081/8082/g' server.xml"
 	            sh "cd 'tomcat/' ; zip -r conf.zip conf"
 	           	archive "tomcat/conf.zip"
 	           	sh "cd 'tomcat/' ; zip -r webapps.zip webapps"
