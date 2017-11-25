@@ -12,6 +12,7 @@ pipeline {
 				sh "cd 'tomcat' ; mvn 'compile'"
 			}
 		}
+		// The 'Findbugs'-stage is disabled for now.
 /*		stage('findbugs') {
 			steps {
 				sh "cd 'tomcat' ; mvn site"
@@ -44,6 +45,7 @@ pipeline {
 	            archive "tomcat/target/pmd.xml"
 	            sh "cd 'tomcat/target' ; zip -r site.zip site"
 	            archive "tomcat/target/site.zip"
+	            archive "Dockerfile"
 	            junit 'tomcat/target/surefire-reports/*.xml'
 	        }
 	}
