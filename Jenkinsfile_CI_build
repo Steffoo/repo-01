@@ -38,6 +38,20 @@ pipeline {
 				sh "cd 'tomcat' ; mvn compile assembly:single"
 			}
 		}
+
+		stage('reports') {
+			step {
+				// Generate HTTP-Reports
+				publishHTML target: [
+	                      allowMissing: true,
+	                      alwaysLinkToLastBuild: false,
+	                      keepAll: true,
+	                      reportDir: 'tomcat/target/site/',
+	                      reportFiles: 'index.html',
+	                      reportName: 'Reports',
+	            ]
+			}
+		}
 	}
 	post {
 	        always {
@@ -54,16 +68,7 @@ pipeline {
 
 	            // Publish junit test-results
 	            junit 'tomcat/target/surefire-reports/*.xml'
-
-	            // Generate HTTP-Reports
-	            publishHTML target: [
-                       allowMissing: true,
-                       alwaysLinkToLastBuild: false,
-                       keepAll: true,
-                       reportDir: 'tomcat/target/site/',
-                       reportFiles: 'index.html',
-                       reportName: 'Reports',
-              ]
+	            
 	        }
 	}
 }
