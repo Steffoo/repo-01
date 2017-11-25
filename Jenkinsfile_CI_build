@@ -41,14 +41,14 @@ pipeline {
 
 		stage('reports') {
 			steps {
-				// Generate HTTP-Reports
+				// Generate Emma-Reports
 				publishHTML target: [
 	                      allowMissing: true,
 	                      alwaysLinkToLastBuild: false,
 	                      keepAll: true,
-	                      reportDir: 'tomcat/target/site/',
+	                      reportDir: 'tomcat/target/site/emma',
 	                      reportFiles: 'index.html',
-	                      reportName: 'Reports',
+	                      reportName: 'Emma-Report',
 	            ]
 			}
 		}
