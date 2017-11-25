@@ -40,7 +40,7 @@ pipeline {
 		}
 
 		stage('reports') {
-			step {
+			steps {
 				// Generate HTTP-Reports
 				publishHTML target: [
 	                      allowMissing: true,
