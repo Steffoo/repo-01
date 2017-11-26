@@ -1,0 +1,9 @@
+task('hallo') {
+    doLast {
+        println "Hallo Welt!"
+    }
+}
+task('copy', type: Copy, dependsOn: 'hallo') {
+    from(file('srcDir'))
+    into(buildDir)
+}

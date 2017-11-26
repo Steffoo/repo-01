@@ -1,0 +1,13 @@
+USAGE: gradle [option...] [task...]
+
+-a Do not rebuild project dependencies.
+-b, --build-file Specify the build file.
+--build-cache Enables the Gradle build cache. 
+-c Specify the settings file.
+--system-prop Set system property of the JVM.
+--daemon Uses the Gradle Daemon 
+		to run the build.
+[...]
+--exclude-task Specify a task to be excluded 
+	  		from execution.
+
