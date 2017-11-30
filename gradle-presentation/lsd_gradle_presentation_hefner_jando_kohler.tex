@@ -36,13 +36,19 @@
 %
 %-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-\documentclass[newPxFont,numfooter,sectionpages]{beamer}
+\documentclass[newPxFont,numfooter,sectionpages,notes]{beamer}
+% Ohne die Notizen kompilieren (z.B. für ein Handout)
+% \documentclass[newPxFont,numfooter,sectionpages]{beamer}
+
 \usepackage[utf8]{inputenc}
 \usetheme{sthlm}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14}
 \usepackage{cancel}
 \usepackage[ngerman]{babel}
+
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen}
 
 \usepackage{xcolor}
 % Definition eigener Farbwerte
@@ -160,7 +166,7 @@ Wenn man Gradle selbst um Hilfe bittet:
 		\end{itemize}
 	\item Kombination aus Konzepten von \alert{Apache Ant} und \alert{Apache Maven}:
 		\begin{enumerate}
-			\item Simplizität von Maven (\emph{\enquote{Convention over Configuration}})
+			\item Einfachheit von Maven (\emph{\enquote{Convention over Configuration}})
 			\item Flexibilität von Ant
 		\end{enumerate}
 	\item Simples Bauen von Projekten, die aus mehreren (verschieden-artigen) Teil-Projekten zusammengesetzt sind
@@ -175,12 +181,23 @@ Wenn man Gradle selbst um Hilfe bittet:
 	\begin{itemize}
 		\item Grails
 		\item Hibernate
-		\item Spring (insbesondere Spring Security)
+		\item Spring (insbesondere Spring Boot, Spring Security)
 	\end{itemize}
 \end{itemize}
+
+\note{
+	Von führenden IT-Unternehmen im Einsatz, z.B.:
+	\begin{itemize}
+		\item Google
+		\item Netflix
+		\item Oracle
+		\item Paypal
+	\end{itemize}
+}
+
 \end{frame}
 
-\begin{frame}{Sprachen-Unterstützung}
+\begin{frame}{Unterstützte Sprachen}
 Gradle unterstützt direkt...
 \begin{itemize}
 	\item Java
@@ -218,6 +235,7 @@ Weitere Sprachen wie \emph{Assembler}, \emph{C}, \emph{C++} und \emph{Objective-
 	\caption{Abhängigkeiten zwischen typischen Gradle-Tasks}
 	
 \end{figure}
+TODO: Bild selbst nachbauen in guter Quali!
 \vfill
 \end{frame}
 
@@ -242,6 +260,15 @@ Weitere Sprachen wie \emph{Assembler}, \emph{C}, \emph{C++} und \emph{Objective-
 			\end{itemize}
 		\end{column}
 	\end{columns}
+
+	\note{
+		Man sollte immer \texttt{./gradlew <cmd>} ausführen, da:
+		\begin{itemize}
+			\item Gebundelte Version mit Wrapper um Gradle, der die in der \emph{build.gradle} angegebene Version von Gradle startet
+			\item Somit keine Kompatibilitätsprobleme
+			\item Durch IDE-Plugin generiert
+		\end{itemize}
+	}
 	
 \end{frame}
 
@@ -253,10 +280,20 @@ Weitere Sprachen wie \emph{Assembler}, \emph{C}, \emph{C++} und \emph{Objective-
 		\midrule
 		\cBlue{Build-Config} & \texttt{pom.xml} & \texttt{build.gradle},\newline \texttt{settings.gradle} \& \newline \texttt{gradle.properties} \\
 		\cBlue{Sprache} & XML & Groovy/DSL \\
+		\cBlue{Build-Elemente} & Phasen & Tasks \\
+		\cBlue{Standard-Tasks} & \texttt{build} \newline \texttt{clean} \newline \texttt{compile} \newline \texttt{assembl\textbf{y}:single}& \texttt{build} \newline \texttt{clean} \newline \texttt{compile\textbf{Java}} \newline \texttt{assembl\textbf{e}}\\
 		\bottomrule
 	\end{tabularx}
 	\label{tab:maven_gradle_vergleich}
 \end{table}
+
+\note{
+	\begin{itemize}
+		\item \texttt{compileJava}: Es gibt für verschiedene Sprachen des Projekts verschiedene Tasks bei Gradle
+		\item Je nach erkanntem Sourcecode-Files werden die Tasks angeboten
+	\end{itemize}
+}
+
 \end{frame}
 
 \section{Build- und Config-Files}
@@ -275,175 +312,26 @@ TODO: Standard-Aufbau erklären...
 
 \section{Plugins}
 
+\begin{frame}{Umstieg auf Gradle}
+TODO: Interessante Plugins kurz erwähnen
+\begin{itemize}
+	\item Die, die bisher bei unserem Tomcat benutzt wurden: Findbugs, Checkstyle, Emma
+	\item Weitere Interessante
+\end{itemize}
+
+\end{frame}
+
 \section{Umstieg auf Gradle}
 
-\begin{frame}[c]{Primary Presentation Colors}
-
-\begin{columns}[c]
-
-%	Color Box: Dark Grey
-\begin{column}{0.12\textwidth}
-\vspace{3em}
-\setbeamercolor{boxsthlmDarkGrey}{bg=\cnDarkGrey,fg=white}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmDarkGrey}
-\centering
-	\texttt{Grey}
-\end{beamercolorbox}
-
-\vspace{3em}
-
-%	Color Box: Grey
-\setbeamercolor{boxsthlmGrey}{bg=\cnGrey,fg=\cnDarkGrey}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmGrey}
-\centering
-	\texttt{Grey}
-\end{beamercolorbox}
-
-\end{column}
-
-\begin{column}{0.12\textwidth}
-
-\vspace{3em}
-	
-%	Color Box: Blue
-\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmBlue}
-\centering
-	\texttt{Blue}
-\end{beamercolorbox}
-
-\vspace{3em}
-
-%	Color Box: Light Blue
-\setbeamercolor{boxsthlmLightBlue}{bg=\cnLightBlue,fg=\cnDarkGrey}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmLightBlue}
-\centering
-	\texttt{Blue}
-\end{beamercolorbox}
-\end{column}
-
-\begin{column}{0.12\textwidth}
-
-%	Color Box: Red
-\vspace{3em}
-\setbeamercolor{boxsthlmRed}{bg=\cnRed,fg=white}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmRed}
-\centering
-	\texttt{Red}
-\end{beamercolorbox}
-
-\vspace{3em}
-
-%	Color Box: Light Red
-\setbeamercolor{boxsthlmLightRed}{bg=\cnLightRed,fg=\cnDarkGrey}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmLightRed}
-\centering
-	\texttt{Red}
-\end{beamercolorbox}
-\end{column}
-
-\begin{column}{0.12\textwidth}
-
-\vspace{3em}
-
-%	Color Box: Green
-\setbeamercolor{boxsthlmGreen}{bg=\cnGreen,fg=white}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmGreen}
-\centering
-	\texttt{Green}
-\end{beamercolorbox}
-
-\vspace{3em}
-
-%	Color Box: Light Green
-\setbeamercolor{boxsthlmLightGreen}{bg=\cnLightGreen,fg=\cnDarkGrey}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmLightGreen}
-\centering
-	\texttt{Green}
-\end{beamercolorbox}
-\end{column}
-
-\begin{column}{0.12\textwidth}
-
-\vspace{3em}
-
-%	Color Box: Purple
-\setbeamercolor{boxsthlmPurple}{bg=\cnPurple,fg=white}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmPurple}
-\centering
-	\texttt{Purple}
-\end{beamercolorbox}
-
-\vspace{3em}
-
-%	Color Box: Light Purple
-\setbeamercolor{boxsthlmLightPurple}{bg=\cnLightPurple,fg=\cnDarkGrey}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmLightPurple}
-\centering
-	\texttt{Purple}
-\end{beamercolorbox}
-\end{column}
-
-\begin{column}{0.12\textwidth}
-
-\vspace{3em}
-
-%	Color Box: Orange
-\setbeamercolor{boxsthlmOrange}{bg=\cnOrange,fg=white}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmOrange}
-\centering
-	\texttt{Orange}
-\end{beamercolorbox}
-
-\vspace{3em}
-
-%	Color Box: Light Orange
-\setbeamercolor{boxsthlmLightOrange}{bg=\cnLightOrange,fg=\cnDarkGrey}
-\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmLightOrange}
-\centering
-	\texttt{Orange}
-\end{beamercolorbox}
-\end{column}
-\end{columns}
-\end{frame}
-
-%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-%	FRAME:
-%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-\begin{frame}{Colored Text}
-\begin{table}[]
-	\caption{Colored Text}
-	\begin{tabular}[]{lcc}
-		\toprule
-		Red				& \cLightRed{LightRed}	& \cRed{Red} 	\\[0.25em]
-		Blue			& \cLightBlue{LightBlue}	& \cBlue{Blue}	\\[0.25em]
-		Green			& \cLightGreen{LightGreen}	& \cGreen{Green}	\\[0.25em]
-		Purple			& \cLightPurple{LightPurple}	& \cPurple{Purple}	\\[0.25em]
-		Orange			& \cLightOrange{LightOrange}	& \cOrange{Orange}	\\[0.25em]
-		Grey			& \cGrey{Grey}					& \cDarkGrey{DarkGrey}	\\[0.25em]
-		\bottomrule
-	\end{tabular}
-	\label{tab:Colored Text}
-\end{table}
-\end{frame}
-
-\begingroup
-\setbeamercolor{background canvas}{bg=\cnGreen}
-\begin{frame}{Frame Colored Backgrounds}
-
-\centering{\cGrey{\Huge{Green Background}}}
+\begin{frame}{Umstieg auf Gradle}
+TODO: Umstieg von diversen Build-Tools kurz anreisen
+\begin{itemize}
+	\item z.B. Ant, Maven
+	\item Eventuell auch für Andere Sprachen, z.B. Composer (PHP)
+\end{itemize}
 
 \end{frame}
-\endgroup
 
-\begin{frame}{Quellen}
-	\begin{itemize}
-		\item \href{https://gradle.org/docs/}{Gradle.org/docs}
-		\item \href{https://de.wikipedia.org/wiki/Gradle}{de.wikipedia.org: Gradle}
-		
-	\end{itemize}
-\end{frame}
 
 \begingroup
 \setbeamercolor{background canvas}{bg=\cnDarkGrey}
