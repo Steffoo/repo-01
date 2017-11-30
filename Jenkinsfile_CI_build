@@ -13,12 +13,11 @@ pipeline {
 			}
 		}
 		// The 'Findbugs'-stage is disabled for now.
-/*		stage('findbugs') {
+		stage('findbugs') {
 			steps {
 				sh "cd 'tomcat' ; mvn site"
 			}
 		}
-*/
 		stage('pmd') {
 			steps {
 				// Continue even if pmd tests fail
@@ -46,9 +45,17 @@ pipeline {
 	                      allowMissing: true,
 	                      alwaysLinkToLastBuild: false,
 	                      keepAll: true,
-	                      reportDir: 'tomcat/target/site/emma',
+	                      reportDir: 'tomcat/target/site/emma', 
 	                      reportFiles: 'index.html',
 	                      reportName: 'Emma-Report',
+	            ],
+	            publishHTML target: [
+	            	       allowMissing: true,
+	            	       alwaysLinkToLastBuild: false,
+	            	       keepAll: true,
+	            	       reportDir: 'tomcat/target/site', 
+	            	       reportFiles: 'pmd.html',
+	            	       reportName: 'PMD-Report',
 	            ]
 			}
 		}
