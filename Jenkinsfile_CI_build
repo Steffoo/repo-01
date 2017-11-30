@@ -23,6 +23,16 @@ pipeline {
 				// Continue even if pmd tests fail
 				sh "cd 'tomcat' ; mvn pmd:check || true"
 			}
+			post {
+				publishHTML target: [
+					            	       allowMissing: true,
+					            	       alwaysLinkToLastBuild: false,
+					            	       keepAll: true,
+					            	       reportDir: 'tomcat/target/site', 
+					            	       reportFiles: 'pmd.html',
+					            	       reportName: 'PMD-Report',
+					            ]
+			}
 		}
 		stage('test/emma') {
 			steps {
@@ -31,32 +41,20 @@ pipeline {
 				// That's why we don't need the `mvn test`-target anymore
 				sh "cd 'tomcat' ; mvn emma:emma"
 			}
+			post {
+				publishHTML target: [
+					                      allowMissing: true,
+					                      alwaysLinkToLastBuild: false,
+					                      keepAll: true,
+					                      reportDir: 'tomcat/target/site/emma', 
+					                      reportFiles: 'index.html',
+					                      reportName: 'Emma-Report',
+					            ]
+			}
 		}
 		stage('assembly') {
 			steps {
 				sh "cd 'tomcat' ; mvn compile assembly:single"
-			}
-		}
-
-		stage('reports') {
-			steps {
-				// Generate Emma-Reports
-				publishHTML target: [
-	                      allowMissing: true,
-	                      alwaysLinkToLastBuild: false,
-	                      keepAll: true,
-	                      reportDir: 'tomcat/target/site/emma', 
-	                      reportFiles: 'index.html',
-	                      reportName: 'Emma-Report',
-	            ],
-	            publishHTML target: [
-	            	       allowMissing: true,
-	            	       alwaysLinkToLastBuild: false,
-	            	       keepAll: true,
-	            	       reportDir: 'tomcat/target/site', 
-	            	       reportFiles: 'pmd.html',
-	            	       reportName: 'PMD-Report',
-	            ]
 			}
 		}
 	}
