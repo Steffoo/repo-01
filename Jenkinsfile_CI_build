@@ -22,16 +22,14 @@ pipeline {
 			steps {
 				// Continue even if pmd tests fail
 				sh "cd 'tomcat' ; mvn pmd:check || true"
-			}
-			post {
 				publishHTML target: [
-					            	       allowMissing: true,
-					            	       alwaysLinkToLastBuild: false,
-					            	       keepAll: true,
-					            	       reportDir: 'tomcat/target/site', 
-					            	       reportFiles: 'pmd.html',
-					            	       reportName: 'PMD-Report',
-					            ]
+									            	       allowMissing: true,
+									            	       alwaysLinkToLastBuild: false,
+									            	       keepAll: true,
+									            	       reportDir: 'tomcat/target/site', 
+									            	       reportFiles: 'pmd.html',
+									            	       reportName: 'PMD-Report',
+									            ]
 			}
 		}
 		stage('test/emma') {
@@ -40,16 +38,14 @@ pipeline {
 				// reports, its target executes the test-target as well.
 				// That's why we don't need the `mvn test`-target anymore
 				sh "cd 'tomcat' ; mvn emma:emma"
-			}
-			post {
 				publishHTML target: [
-					                      allowMissing: true,
-					                      alwaysLinkToLastBuild: false,
-					                      keepAll: true,
-					                      reportDir: 'tomcat/target/site/emma', 
-					                      reportFiles: 'index.html',
-					                      reportName: 'Emma-Report',
-					            ]
+									                      allowMissing: true,
+									                      alwaysLinkToLastBuild: false,
+									                      keepAll: true,
+									                      reportDir: 'tomcat/target/site/emma', 
+									                      reportFiles: 'index.html',
+									                      reportName: 'Emma-Report',
+									            ]
 			}
 		}
 		stage('assembly') {
